@@ -4,15 +4,22 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  background: #D5D5D5
+  background-color: #D5D5D5;
   margin-bottom: 60px;
 }
 body > .container {
-  padding: 60px 15px 0;
+  padding: 60px 15px 70px 15px;
+}
+a {
+    text-decoration: none;
+    color: #6D7993;
 }
 .container .text-muted {
   margin: 20px 0;
   float: right;
+}
+.text-muted{
+  font-size: 8px;
 }
 .footer {
   position: absolute;
@@ -31,4 +38,127 @@ code {
   font-size: 80%;
 }
 
-/* Sidebar */
+@media {
+    .container {
+        width: 75%;
+        padding: 20px;
+        min-width: 504px;
+        float: left;
+    }
+}
+
+.jumbotron {
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+  color: inherit;
+  background-color: #D5D5D5;
+
+}
+
+img.headshot {
+    width: 130px;
+    float: left;
+    transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -webkit-transition: opacity .3s ease-in-out;
+    vertical-align: top;
+    padding: 10px 10px 10px 10px;
+}
+
+#content {
+  margin: 20px 40px 40px;
+  max-width: 612px;
+}
+.segment {
+  margin-top: 20px;
+  border-top: 2px solid #9099A2;
+  padding-top: 20px;
+}
+.text, .text-link {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  margin-top: 10px;
+  font-family: verdana
+}
+.text {
+  color: #6D7993;
+}
+.text-link {
+  color: #9099A2;
+}
+
+table {
+  table-layout: fixed;
+  margin 20px auto;
+}
+
+td {
+  vertical-align: middle;
+}
+
+.info {
+  max-width: 320px;
+  margin: 0 auto;
+  float: left;
+}
+.info td:nth-child(1) {
+  width: 300px;
+  padding-left: 15px;
+  vertical-align: middle;
+}
+.info td:nth-child(2) {
+  padding-left: 8px;
+  vertical-align: middle;
+}
+.info td:nth-child(3) {
+  padding-left: 8px;
+  vertical-align: middle;
+}
+.info td:nth-child(4) {
+  padding-left: 8px;
+  vertical-align: middle;
+}
+.info td:nth-child(5) {
+  padding-left: 8px;
+  vertical-align: middle;
+}
+
+.info-course {
+  max-width: 516px;
+  margin: 0 auto;
+  float: left;
+}
+.info-course td {
+  font-size: 16px;
+  color: #181c20;
+  padding: 3px 5px 2px 2px;
+  border-collapse: collapse;
+}
+
+
+.links {
+  border-collapse: collapse;
+  text-align: left;
+  max-width: 612px;
+  min-width: 468px;
+  margin: 0 auto;
+  float: left;
+}
+.links th {
+  font-size: 14px;
+  font-weight: normal;
+  color: #181c20;
+  border-bottom: 2px solid #96858F;
+  padding: 10px 10px 10px 10px;;
+}
+.links td {
+  border-bottom: 1px solid #96858F;
+  color: #6D7993;
+  padding: 10px 10px 10px 10px;
+}
+.links tbody tr:hover td {
+  color: #96858F;
+}

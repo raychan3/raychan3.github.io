@@ -10,84 +10,128 @@
     <meta name="description" content="">
     <meta name="author" content="Raymond Chan">
     
-    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.ico"/>
+    <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.ico"/>
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/sidebar.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/assets/css/sidebar.css" rel="stylesheet">
 
-    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
   </head>
 
-  <div class="nav-side-menu">
-    <div class="brand">Brand Logo</div>
-    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
-    <div class="menu-list">
-        <ul id="menu-content" class="menu-content collapse out">
-            <li>
-                <a href="#">
-                    <i class="fa fa-dashboard fa-lg"></i> Dashboard
-                </a>
-            </li>
-            <li data-toggle="collapse" data-target="#products" class="collapsed active">
-                <a href="#"><i class="fa fa-gift fa-lg"></i> UI Elements <span class="arrow"></span></a>
-            </li>
-            <ul class="sub-menu collapse" id="products">
-                <li class="active"><a href="#">CSS3 Animation</a></li>
-                <li><a href="#">General</a></li>
-                <li><a href="#">Buttons</a></li>
-                <li><a href="#">Tabs &amp; Accordions</a></li>
-                <li><a href="#">Typography</a></li>
-                <li><a href="#">FontAwesome</a></li>
-                <li><a href="#">Slider</a></li>
-                <li><a href="#">Panels</a></li>
-                <li><a href="#">Widgets</a></li>
-                <li><a href="#">Bootstrap Model</a></li>
-            </ul>
-            <li data-toggle="collapse" data-target="#service" class="collapsed">
-                <a href="#"><i class="fa fa-globe fa-lg"></i> Services <span class="arrow"></span></a>
-            </li>
-            <ul class="sub-menu collapse" id="service">
-                <li>New Service 1</li>
-                <li>New Service 2</li>
-                <li>New Service 3</li>
-            </ul>
-
-
-            <li data-toggle="collapse" data-target="#new" class="collapsed">
-                <a href="#"><i class="fa fa-car fa-lg"></i> New <span class="arrow"></span></a>
-            </li>
-            <ul class="sub-menu collapse" id="new">
-                <li>New New 1</li>
-                <li>New New 2</li>
-                <li>New New 3</li>
-            </ul>
-            <li>
-                <a href="#">
-                    <i class="fa fa-user fa-lg"></i> Profile
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa fa-users fa-lg"></i> Users
-                </a>
-            </li>
-        </ul>
-    </div>
-  </div>
-  <div class="container" id="main">
-      <div class="row">
-          <div class="col-md-12">
-              <h4>This is suppose to be in the main content</h4>
-          </div>
-      </div>
-  </div>
+  <div w3-include-html="/sidebar.html"></div>
 
   <body>
+
+  <div class="container" id="main">
+    <div id="content">
+      <div class="segment">
+        <table class="info">
+        <tr>
+          <td rowspan="2">
+            <img class='headshot img-circle' src='/assets/images/raymond.jpg'/>
+          </td>
+          <td>
+            <a href="/assets/resume.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-fw fa-2x"></i></a>
+          </td>
+          <td>
+            <a href="mailto:raymondchan243@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i></a>
+          <td>
+        </tr>
+        <tr>
+          <td>  
+            <a href="https://linkedin.com/in/raychan3/en" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+          </td>
+          <td>
+            <a href="http://github.com/raychan3" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+          </td>
+        </tr>
+        </table>
+      </div>
+
+      <br><br><br><br><br><br><br>
+
+      <div class="segment">
+        <div class="text">Hi, I am finishing up my Computer Science and Business Administration studies at UC Berkeley. Past summers, I have interned at ZapLabs and Google. At school, I work with Capital Investments at Berkeley in applying deep and reinforcement learning on finance markets. This semester I teach Efficient Algorithms and Intractable Problems (CS 170) as an undergraduate student instructor. You can find my résumé <a href="/assets/resume.pdf" target="_blank"><u>here</u></a> and teaching materials below.</div>
+      </div>
+
+      <div class="segment">
+        <table class="links">
+        <thead>
+        <tr>
+          <th>Course</th>
+          <th>Course Name</th>
+          <th>Semester</th>
+          <th>Resource</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>CS 170</td>
+          <td>
+            <a href="https://inst.eecs.berkeley.edu/~cs170/fa17/" target="_blank">
+              <u>Efficient Algorithms and<br>Intractable Problems</u>
+            </a>
+          </td>
+          <td>
+            Fall 2017 <br> (Head TA)
+          </td>
+          <td>
+            <a href="cs170/fa17.html"><u>Link</u></a>
+          </td>
+        </tr>
+        <tr>
+          <td>CS 170</td>
+          <td>
+            <a href="https://inst.eecs.berkeley.edu/~cs170/sp17/" target="_blank">
+              <u>Efficient Algorithms and<br>Intractable Problems</u>
+            </a>
+          </td>
+          <td>Spring 2017</td>
+          <td>
+            <a href="cs170/sp17.html"><u>Link</u></a>
+          </td>
+        </tr>
+        <tr>
+          <td>CS 61A</td>
+          <td>
+            <a href="https://inst.eecs.berkeley.edu/~cs61a/fa16/" target="_blank">
+              <u>The Structure and Interpretation<br>of Computer Programs</u>
+            </a>
+          </td>
+          <td>Fall 2016</td>
+          <td>
+            <a href="cs61a/fa16.html"><u>Link</u>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>CS 61A</td>
+          <td>
+            <a href="https://inst.eecs.berkeley.edu/~cs61a/sp16/" target="_blank">
+              <u>The Structure and Interpretation<br>of Computer Programs</u>
+            </a>
+          </td>
+          <td>Spring 2016</td>
+          <td>
+            <a href="cs61a/sp16.html"><u>Link</u></a>
+          </td>
+        </tr>
+        </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
   </body>
+
+  <script>w3.includeHTML();</script>
 
   <footer class="footer">
     <div class="container">
@@ -98,6 +142,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
 
 </html>
