@@ -76,19 +76,21 @@ img.headshot {
   border-top: 2px solid #9099A2;
   padding-top: 20px;
 }
-.text, .text-link {
+.text, .text-body {
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
   margin-top: 10px;
   font-family: verdana
-}
-.text {
   color: #6D7993;
 }
-.text-link {
-  color: #9099A2;
+.text {
+  font-size: 14px;
 }
+.text-body {
+  font-size: 12px;
+}
+
 
 table {
   table-layout: fixed;
@@ -161,4 +163,7 @@ td {
 }
 .links tbody tr:hover td {
   color: #96858F;
+}
+h3 {
+  color: #6D7993;
 }
