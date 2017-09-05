@@ -1,133 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Raymond Chan's website.">
-        <meta name="author" content="Raymond Chan">
+  <head>
+    <title> Raymond Chan </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Raymond Chan's Site">
+    <meta name="description" content="">
+    <meta name="author" content="Raymond Chan">
+    
+    <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.ico"/>
 
-        <title> Raymond Chan </title>
-        <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/assets/css/sidebar.css" rel="stylesheet">
 
-        <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <!-- Custom CSS -->
-        <link href="css/grayscale.css" rel="stylesheet">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
 
-        <!-- Custom Fonts -->
-        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  </head>
 
-         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+  <div w3-include-html="/sidebar.html"></div>
 
-    </head>
+  <body>
 
-    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <div class="container" id="main">
+    <div id="content">
+      <div class="segment">
+        <table class="info">
+        <tr>
+          <td rowspan="2">
+            <img class='headshot img-circle' src='/assets/images/raymond.jpg'/>
+          </td>
+          <td>
+            <a href="/assets/resume.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-fw fa-2x"></i></a>
+          </td>
+          <td>
+            <a href="mailto:raymondchan243@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i></a>
+          <td>
+        </tr>
+        <tr>
+          <td>  
+            <a href="https://linkedin.com/in/raychan3/en" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+          </td>
+          <td>
+            <a href="http://github.com/raychan3" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+          </td>
+        </tr>
+        </table>
+      </div>
 
-        <!-- Navigation -->
-        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-            <div class="container">
-                <!-- Testing -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand page-scroll" href="#page-top">
-                          <span class="light">Home</span>
-                    </a>
-                </div>
+      <br><br><br><br><br><br><br>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-left navbar-main-collapse">
-                    <ul class="nav navbar-nav">
-                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                        <li class="hidden">
-                            <a href="#page-top"></a>
-                        </li>
-                        <li>
-                            <a href="/cs61a">CS61A</a>
-                        </li>
-                        <li>
-                            <a href="/cs170.html">CS170</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#about">About</a>
-                        </li>
+      <div class="segment">
+        <div class="text">Hi, I am finishing up my Computer Science and Business Administration studies at UC Berkeley. Past summers, I have interned at ZapLabs and Google. At school, I work with Capital Investments at Berkeley in applying deep and reinforcement learning on finance markets. This semester I teach Efficient Algorithms and Intractable Problems (CS 170) as an undergraduate student instructor. You can find my résumé <a href="/assets/resume.pdf" target="_blank"><u>here</u></a> and teaching materials below.</div>
+      </div>
 
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container -->
-        </nav>
+      <div class="segment">
+        <table class="links">
+        <thead>
+        <tr>
+          <th>Course</th>
+          <th>Course Name</th>
+          <th>Semester</th>
+          <th>Resource</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>CS 170</td>
+          <td>
+            <a href="https://inst.eecs.berkeley.edu/~cs170/fa17/" target="_blank">
+              <u>Efficient Algorithms and<br>Intractable Problems</u>
+            </a>
+          </td>
+          <td>
+            Fall 2017 <br> (Head TA)
+          </td>
+          <td>
+            <a href="cs170/fa17.html"><u>Link</u></a>
+          </td>
+        </tr>
+        <tr>
+          <td>CS 170</td>
+          <td>
+            <a href="https://inst.eecs.berkeley.edu/~cs170/sp17/" target="_blank">
+              <u>Efficient Algorithms and<br>Intractable Problems</u>
+            </a>
+          </td>
+          <td>Spring 2017</td>
+          <td>
+            <a href="cs170/sp17.html"><u>Link</u></a>
+          </td>
+        </tr>
+        <tr>
+          <td>CS 61A</td>
+          <td>
+            <a href="https://inst.eecs.berkeley.edu/~cs61a/fa16/" target="_blank">
+              <u>The Structure and Interpretation<br>of Computer Programs</u>
+            </a>
+          </td>
+          <td>Fall 2016</td>
+          <td>
+            <a href="cs61a/fa16.html"><u>Link</u>
+            </a>
+            <br>
+          </td>
+        </tr>
+        <tr>
+          <td>CS 61A</td>
+          <td>
+            <a href="https://inst.eecs.berkeley.edu/~cs61a/sp16/" target="_blank">
+              <u>The Structure and Interpretation<br>of Computer Programs</u>
+            </a>
+          </td>
+          <td>Spring 2016</td>
+          <td>
+            <a href="cs61a/sp16.html"><u>Link</u></a>
+          </td>
+        </tr>
+        </tbody>
+        </table>
+      </div>
 
-        <!-- Intro Header -->
-        <header class="intro">
-            <div class="intro-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <h1 class="brand-heading">Raymond Chan</h1>
-                            <div>
-                            <a href="assets/resume.pdf" target="_blank"><button class="btn btn-info"><i class="fa fa-file-pdf-o fa-fw"></i> Résumé</button></a>
-                            <a href="https://linkedin.com/in/raychan3/en" target="_blank"><button class="btn btn-info"><i class="fa fa-linkedin"></i> LinkedIn</button></a>
-                            <a href="http://github.com/raychan3" target="_blank"><button class="btn btn-info"><i class="fa fa-github"></i> GitHub</button></a>
-                            <a href="mailto:raymondchan243@gmail.com" target="_blank"><button class="btn btn-info"><i class="fa fa-envelope"></i> eMail</button></a>
-                        </div>
+    </div>
+  </div>
 
-                            <a href="#about" class="btn btn-circle page-scroll">
-                                <i class="fa fa-angle-double-down animated"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+  </body>
 
+  <script>w3.includeHTML();</script>
 
-        <!-- About Section -->
-        <section id="about" class="container content-section text-center">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>About</h2>
-                    <p>I am going into my 4th year studying Computer Science and Business Administration at UC Berkeley.</p>
-                    <p>This semester I will be teaching Computer Science 170 (Efficient Algorithms and Intractable Problems) as an undergraduate instructor. Check out my notes and resources under the CS 170 Tab.</p>
-                </div>
-            </div>
-        </section>
-        <br><br>
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted">Copyright &copy; Raymond Chan 2017. All Rights Reserved.</p>
+    </div>
+  </footer>
 
-        <!-- Footer -->
-        <footer>
-            <div class="container text-center">
-                <p>Copyright &copy; Raymond Chan 2016</p>
-            </div>
-        </footer>
-
-        <!-- jQuery -->
-        <script src="js/jquery.js"></script>
-
-        <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
-
-        <!-- Plugin JavaScript -->
-        <script src="js/jquery.easing.min.js"></script>
-
-        <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
-        <!-- Custom Theme JavaScript -->
-        <script src="js/grayscale.js"></script>
-
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
 
 </html>
