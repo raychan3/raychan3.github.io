@@ -1,2 +1,2 @@
 # Website
-Still in development.
+Personal Website. Hosts teaching material while as a TA at UC Berkeley.
